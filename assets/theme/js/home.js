@@ -1,0 +1,1 @@
+Swal.fire('Oops...', 'Something went wrong!', 'error')

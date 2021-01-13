@@ -1,0 +1,9 @@
+        .btn {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .btn-danger {
+            background-color: #ef3f32;
+        }        

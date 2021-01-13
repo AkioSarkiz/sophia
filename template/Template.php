@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><?=SITENAME . " - ".$data['title']?></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c6cf2" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="<?=IMGROOT?>/assets/img/favicon.ico"/>
+    <?php \Sophia\Stylesheet::page($data); ?>
+</head>
+<body>
+    <?php
+    if (file_exists('views/' . $data['view'] . '.php')) {
+        require_once 'views/' . $data['view'] . '.php';
+    } elseif (file_exists('views/' . $data['view'] . '/' . $data['page'] . '.php')) {
+        require_once 'views/' . $data['view'] . '/' . $data['page'] . '.php';
+    } else {
+        die("View does not exists.");
+    }
+    ?>
+    <?php \Sophia\Javascript::page($data); ?>
+</body>
+
+</html>

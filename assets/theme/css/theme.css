@@ -1,0 +1,53 @@
+.main-sidebar {
+    padding: .5rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #424242;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    font-weight: 400;
+    font-size: .9rem;
+    text-decoration: none!important;
+}
+
+.main-sidebar:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #424242;
+}
+
+.main-sidebar i {
+    width: 20px;
+    font-size: 110%;
+    margin-right: 13px;
+    text-align: center;
+}
+
+.bg-blue {
+    background-color: #0c6cf2!important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F9FC;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.list-group-item.active {
+    color: #424242;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.main-shadow {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+}
