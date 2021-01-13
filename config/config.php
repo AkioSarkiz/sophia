@@ -1,11 +1,12 @@
 <?php
 session_start();
 
-//Database params
-define('DB_HOST', 'localhost'); //Add your db host
-define('DB_USER', 'root'); // Add your DB root
-define('DB_PASS', ''); //Add your DB pass
-define('DB_NAME', 'proto'); //Add your DB Name
+global $db_host, $db_user, $db_pass, $db_name, $app_root;
+
+$db_host = 'localhost';
+$db_user = 'root';
+$db_pass = '';
+$db_name = 'proto';
 
 //APPROOT
 define('APPROOT', dirname(dirname(dirname(__FILE__))));

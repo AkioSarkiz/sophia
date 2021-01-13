@@ -10,7 +10,9 @@ class Controller
 
     public function __construct()
     {
-        $this->DB = new \Sophia\Addon\DB(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+        global $db_host, $db_user, $db_name, $db_pass;
+
+        $this->DB = new \Sophia\Addon\DB($db_host, $db_user, $db_pass, $db_name);
     }
     public function post_data()
     {
